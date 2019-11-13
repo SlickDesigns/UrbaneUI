@@ -302,6 +302,13 @@ fa-icon {
     justify-content: center;
 }
 
+.img-container::after {
+    position: fixed;
+    top: 0;
+    left: 30px;
+    background: #a799b7;
+}
+
 .service {
     padding: 10px;
     width: 500px;
