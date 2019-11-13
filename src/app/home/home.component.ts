@@ -14,8 +14,8 @@ export class HomeComponent implements OnInit {
 
   view = 0;
 
-  slide = {  }
-  about = {  }
+  slide: any;
+  about: any;
 
   constructor(private config: ConfigService) { }
 
