@@ -1,24 +1,27 @@
 export const configuration = {
-    slides: {  
-        s1: {
-            title: 'UI/UX',
-            heading: 'SOPHISTICATED UI DESIGN',
-            image: '../../assets/images/intro.jpg',
-            buttontext: 'Our Projects',
-        },
-        s2: {
-            title: 'Trucks',
-            heading: 'Trucking Company',
+    hero: {
+        title: 'UI/UX',
+        heading: 'SOPHISTICATED UI DESIGN',
+        image: '../../assets/images/intro.jpg',
+        buttontext: 'Our Projects',
+    },
+    projects: {  
+        Conference: {
+            type: 'Organizers',
+            title: 'weConfer',
+            heading: 'Conference and Event Organizers.',
             image: '../../assets/images/project-confer.png',
         },
-        s3: {
-            title: 'Domains',
-            heading: 'Domain Flipper',
+        Interior: {
+            type: 'Interior',
+            title: 'Design Chops',
+            heading: 'Artistic Interior Home Decorators and Designers',
             image: 'https://d1qmdf3vop2l07.cloudfront.net/enigmatic-tuba.cloudvent.net/compressed/_min_/d23ca3e5392fa7d72b61af1a8ab0b962.jpg',
         },
-        s4: {
-            title: 'Clothing',
-            heading: 'Greek Menswear',
+        Energy: {
+            type: 'Energy',
+            title: 'Solar Panelling',
+            heading: 'Solar Panels for Low Price',
             image: 'https://vinagecko.com/images/screenshots/templates/vg_greek/screenshot-5.png',
         },
         s5: {
