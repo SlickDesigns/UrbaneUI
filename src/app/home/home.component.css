@@ -26,6 +26,7 @@ a {
     width: 100%;
 }
 
+
 .heading {
     color: white;
     z-index: 999;
@@ -56,6 +57,13 @@ a {
 .title h3 {
     font-weight: 500;
 }
+
+.main-btn {
+    position: fixed;
+    top: 65%;
+    left: 30%;
+}
+
 
 .btn-rounded {
     text-transform: uppercase;
