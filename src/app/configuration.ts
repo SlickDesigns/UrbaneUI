@@ -3,13 +3,13 @@ export const configuration = {
         s1: {
             title: 'UI/UX',
             heading: 'SOPHISTICATED UI DESIGN',
-            image: '../../assets/images/project-confer.png',
+            image: '../../assets/images/intro.png',
             buttontext: 'Our Projects',
         },
         s2: {
             title: 'Trucks',
             heading: 'Trucking Company',
-            image: 'https://d1qmdf3vop2l07.cloudfront.net/enigmatic-tuba.cloudvent.net/compressed/_min_/11da6d56002ee173dde2c8f9059f81f5.jpg',
+            image: '../../assets/images/project-confer.png',
         },
         s3: {
             title: 'Domains',
