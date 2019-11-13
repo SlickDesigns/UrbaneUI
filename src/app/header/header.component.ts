@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, NavigationStart, Router  } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -13,14 +13,12 @@ export class HeaderComponent implements OnInit {
 
   title: any;
 
-  constructor(private route: ActivatedRoute) { }
+  constructor(private router: Router) {
+    console.log(this.router.getCurrentNavigation().extras.state);
+   }
 
   ngOnInit() {
-    this.route
-      .data
-      .subscribe(data => {
-        this.title = data;
-      });
+    this.title = history.state;
   }
 
 }
