@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { faLevelDownAlt, faLevelUpAlt } from '@fortawesome/free-solid-svg-icons'
 import { ConfigService } from '../config.service';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -15,11 +16,15 @@ export class HomeComponent implements OnInit {
   view = 0;
 
   slide: any;
+  title: any;
   about: any;
 
-  constructor(private config: ConfigService) { }
+  constructor(private config: ConfigService, private route: ActivatedRoute) { }
 
   ngOnInit() {
+    this.title = this.route
+      .data
+      .subscribe(v => console.log(v));
     this.slide = this.getSlides(1);
     this.about = this.config.getConfig().about;
   }

@@ -8,13 +8,13 @@ import { ProjectsComponent } from './projects/projects.component';
 
 
 const routes: Routes = [
-  { path: 'home',component: HomeComponent },
+  { path: 'home',component: HomeComponent, data : {title : 'home'} },
   { path: '',
     redirectTo: '/home',
     pathMatch: 'full'
   },
   { path: 'privacy-policy',component: PrivacyComponent },
-  { path: 'projects',component: ProjectsComponent },
+  { path: 'projects',component: ProjectsComponent, data : {title : 'projects'} },
   { path: '**', component: PagenotfoundComponent }
 ];
 
