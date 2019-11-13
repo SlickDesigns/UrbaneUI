@@ -18,7 +18,7 @@ export class HeaderComponent implements OnInit {
   ngOnInit() {
     this.title = this.route
       .data
-      .subscribe(v => console.log(v));
+      .subscribe(v => {return v});
   }
 
 }

@@ -8,6 +8,15 @@
     justify-content: space-between;
 }
 
+.title {
+    position: fixed;
+    top: 10%;
+    right: 17%;
+    font-family: 'Montserrat';
+    font-weight: 400;
+}
+
+
 .mailer {
     font-family: 'Montserrat';
     font-weight: 300;
