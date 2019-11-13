@@ -16,15 +16,13 @@ export class HomeComponent implements OnInit {
   view = 0;
 
   slide: any;
-  title: any;
+  
   about: any;
 
-  constructor(private config: ConfigService, private route: ActivatedRoute) { }
+  constructor(private config: ConfigService) { }
 
   ngOnInit() {
-    this.title = this.route
-      .data
-      .subscribe(v => console.log(v));
+    
     this.slide = this.getSlides(1);
     this.about = this.config.getConfig().about;
   }

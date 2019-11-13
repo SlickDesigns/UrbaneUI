@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -10,9 +11,14 @@ export class HeaderComponent implements OnInit {
 
   mail = faEnvelope;
 
-  constructor() { }
+  title: any;
+
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
+    this.title = this.route
+      .data
+      .subscribe(v => console.log(v));
   }
 
 }
