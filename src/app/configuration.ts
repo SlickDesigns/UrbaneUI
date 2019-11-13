@@ -3,7 +3,7 @@ export const configuration = {
         s1: {
             title: 'UI/UX',
             heading: 'SOPHISTICATED UI DESIGN',
-            image: 'https://i.pinimg.com/originals/72/c5/fa/72c5fa12dada9e55b5853adc5b2f8da9.jpg',
+            image: '../../assets/images/project-confer.png',
             buttontext: 'Our Projects',
         },
         s2: {
