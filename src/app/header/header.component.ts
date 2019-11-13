@@ -16,9 +16,11 @@ export class HeaderComponent implements OnInit {
   constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
-    this.title = this.route
+    this.route
       .data
-      .subscribe(v => {return v});
+      .subscribe(data => {
+        this.title = data;
+      });
   }
 
 }
