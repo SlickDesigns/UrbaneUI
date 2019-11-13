@@ -1,0 +1,382 @@
+.container {
+    max-height: 100vh;
+    height: auto;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    margin-top: -16px;
+    margin-bottom: -18px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.img-container {
+    margin-left: 10px;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.img-container img {
+    z-index: 0;
+    height: 100vh;
+    width: 100%;
+}
+
+.heading {
+    color: white;
+    z-index: 999;
+    position: fixed;
+    top: 40%;
+    margin-inline: 320px;
+    font-family: 'Montserrat';
+    font-size: 42px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.heading h3 {
+    font-weight: 200;
+}
+
+.title {
+    color: #e0ca3c;
+    z-index: 999;
+    position: fixed;
+    top: 16%;
+    left: 48%;
+    font-family: 'Montserrat';
+    font-size: 22px;
+    text-align: center;
+}
+
+.title h3 {
+    font-weight: 500;
+}
+
+.btn-rounded {
+    text-transform: uppercase;
+    z-index: 999;
+    position: fixed;
+    top: 65%;
+    left: 30%;
+    border: 1px solid #fff;
+    width: 200px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    color: #93b7be;
+}
+
+.btn-rounded:hover {
+    cursor: pointer;
+    background: #e0ca3c;
+    transition: background 0.3s ease;
+    color: #fff;
+}
+
+.btn-round {
+    z-index: 999;
+    position: fixed;
+    top: 60%;
+    left: 44%;
+    border: 1px solid #fff;
+    width: 200px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    color: #fff;
+}
+
+.btn-round:hover {
+    cursor: pointer;
+    background: #e0ca3c;
+    transition: background 0.3s ease;
+    border: 1px solid rgb(184, 42, 42);
+}
+
+.btn-rounded--2 {
+    z-index: 999;
+    position: fixed;
+    text-transform: uppercase;
+    top: 65%;
+    left: 58%;
+    border: 1px solid #fff;
+    width: 200px;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 50px;
+    color: rgb(132, 212, 243);
+}
+
+.btn-rounded--2:hover {
+    cursor: pointer;
+    background: #2d3047;
+    transition: background 0.3s ease;
+    color: #fff;
+}
+
+.slide-navigator span {
+    display: block;
+    width: 10px;
+    height: 8px;
+    margin: 0 0 30px 0;
+    position: relative;
+    cursor: pointer;
+    color: white;
+}
+
+.dot::before {
+    border-radius: 50%;
+background:#fff;
+opacity: 1;
+height: 6px;
+width: 6px;
+content: "";
+display: block;
+position: absolute;
+top: 3px;
+left: 3px;
+-webkit-transition: all .1s ease-in-out;
+transition: all .1s ease-in-out;
+}
+
+.dot:hover::before {
+    border-radius: 50%;
+background:rgba(255, 255, 255, 0);
+opacity: 1;
+height: 8px;
+width: 8px;
+content: "";
+display: block;
+position: absolute;
+top: 1px;
+left: 1px;
+-webkit-transition: all .4s ease-in-out;
+transition: all .1s ease-in-out;
+border: 2px solid #fff;
+
+}
+
+.slide-navigator {
+    right: 20px;
+        top: 50%;
+margin-top: -158px;
+position: absolute;
+}
+
+.elements {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.headings {
+    color: white;
+    z-index: 999;
+    position: fixed;
+    top: 35%;
+    left: 35%;
+    font-family: 'Montserrat';
+    font-size: 40px;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+.headings h3 {
+    font-weight: 600;
+}
+
+.titles {
+    color: #e0ca3c;
+    height: 60px;
+    z-index: 999;
+    position: fixed;
+    top: 12%;
+    left: 48%;
+    margin-bottom: 40px;
+    font-family: 'Montserrat';
+    font-size: 22px;
+    text-align: center;
+    padding-bottom: 5px;
+    border-bottom: 1px solid salmon;
+}
+
+.titles h3 {
+    font-weight: 500;
+}
+
+.scroll-down {
+    position: fixed;
+    top: 85%;
+    left: 50%;
+    transition: top 0.6s ease;
+}
+
+.scroll-down:hover  {
+    cursor: pointer;
+    position: fixed;
+    top: 87%;
+    left: 50%;
+    transition: top 0.6s ease;
+}
+
+.scroll-down:hover h4 {
+    display: block;
+}
+
+.scroll-down h4 {
+    position: fixed;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    color: #e0ca3c;
+    top: 84%;
+    left: 52%;
+    display: none;
+}
+
+.scroll-up {
+    position: fixed;
+    top: 85%;
+    left: 93%;
+    transition: top 0.6s ease;
+}
+
+.scroll-up:hover  {
+    cursor: pointer;
+    position: fixed;
+    top: 87%;
+    left: 93%;
+    transition: top 0.6s ease;
+}
+
+.scroll-up:hover h4 {
+    display: block;
+}
+
+.scroll-up h4 {
+    position: fixed;
+    font-family: 'Montserrat';
+    font-weight: 700;
+    color: #e0ca3c;
+    top: 84%;
+    left: 87%;
+    display: none;
+}
+
+fa-icon {
+    font-size: 32px;
+    color: #e0ca3c;
+}
+
+.services-title {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    margin-top: 50px;
+    letter-spacing: 1.9px;
+    font-size: 48px;
+    color: #2d3047;
+}
+
+.services {
+    text-align: center;
+    font-family: 'Montserrat';
+    font-weight: 300;
+    font-size: 14px;
+    margin-left: 30px;
+}
+
+.our-services {
+    margin-inline: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.span-1, .span-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.service {
+    padding: 10px;
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.service:hover {
+    background: #a799b7;
+    transition: background 0.7s ease;
+}
+
+.service-icon {
+    width: 100px;
+}
+
+.service-flex {
+    width: 400px;
+    text-align: left;
+}
+
+.image-container {
+    height: 60px;
+    width: 60px;
+    border-radius: 60px;
+}
+
+.about-us {
+    height: 50vh;
+    padding: 200px;
+    text-align: center;
+    padding-top: 15%;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    background: url('../../assets/images/about.jpg');
+    background-image: linear-gradient(to bottom, rgba(14, 0, 50, 0.52), rgba(0, 45, 12, 0.73)),url('../../assets/images/about.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.span-2 {
+    padding-bottom: 45px;
+}
+
+.our-services {
+    margin-top: -40px;
+}
+
+.about-us h1,h2 {
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+
+.about-us h1 {
+    font-size: 48px;
+}
+
+.about-us button {
+    text-transform: uppercase;
+    padding-block: 10px;
+    padding-inline: 25px;
+    border-radius: 2px;
+    border: none;
+    background: rgba(0, 0, 0, 0);
+    border: 1px solid rgb(14, 54, 141);
+    box-shadow: 2px 1px 3px #93b7be;
+    color: white;
+}
+
+.about-us button:hover {
+    background: #e0ca3c;
+    color: black;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}

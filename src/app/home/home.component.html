@@ -1,0 +1,94 @@
+<div class="home">
+    <section class="sliders" *ngIf="view===0">
+        <div class="top-slider">
+            <ul class="slides-container">
+                <li class="slide">
+                    <div class="head-slide-color-block" style="background-color: hsla(240, 14%, 10%, 0.75);"></div>
+                    <div class="container" *ngIf="slide.title==='UI/UX'">
+                        <div class="img-container">
+                            <img src='{{slide.image}}' alt="main" srcset="">
+                        </div>
+                        <div class="elements">
+                        <div class="title"><h3>{{slide.title}}</h3></div>
+                        <div class="heading"><h3>{{slide.heading}}</h3></div>
+                        <a routerLink='/projects'><button class="btn-rounded">{{slide.buttontext || 'Case Study'}}</button></a>
+                        <button class="btn-rounded--2">Our Services</button></div>
+                    </div>
+                    <div class="container" *ngIf="slide.title!=='UI/UX'">
+                        <div class="img-container">
+                            <img src='{{slide.image}}' alt="main" srcset="">
+                        </div>
+                        <div class="elements2">
+                                <div class="titles"><h3>{{slide.title}}</h3></div>
+                            <div class="headings"><h3>{{slide.heading}}</h3></div>
+                        
+                        
+                        <button class="btn-round">{{slide.buttontext || 'View Case Study'}}</button></div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="scroll-down" (click)="changeView()">
+                <h4>Scroll Down</h4>
+            <fa-icon [icon]="down"></fa-icon>
+            </div>
+        <nav class="slide-navigator">
+            <span class="dot" (click)="setSlides(1)"></span>
+            <span class="dot" (click)="setSlides(2)"></span>
+            <span class="dot" (click)="setSlides(3)"></span>
+            <span class="dot" (click)="setSlides(4)"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </nav>
+        
+    </section>
+    <section class="services" *ngIf="view===1">
+        <h2 class="services-title">Services</h2>
+        <div class="scroll-up" (click)="changeViewBack()">
+            <h4>Scroll Up</h4>
+            <fa-icon [icon]="up"></fa-icon>
+        </div>
+        <div class="our-services">
+            <div class="span-1">
+            <div class="service">
+                <div class="service-icon"></div>
+                <div class="service-flex">
+                <h2>UI UX</h2>
+                <p>There’s no development without the problem-solving design. A powerful digital product design strategy is one of our secrets for producing a unique interface and setting up consistent user flows. We know how to create apps that leverage your business goals and match them to people’s needs.</p>
+                </div>
+            </div>
+            <div class="service">
+                    <div class="service-icon"></div>
+                    <div class="service-flex">
+                    <h2>UI UX</h2>
+                    <p>There’s no development without the problem-solving design. A powerful digital product design strategy is one of our secrets for producing a unique interface and setting up consistent user flows. We know how to create apps that leverage your business goals and match them to people’s needs.</p>
+                    </div>
+                </div></div>
+            <div class="span-2">
+            <div class="service">
+                <div class="service-icon"></div>
+                <div class="service-flex">
+                <h2>UI UX</h2>
+                <p>There’s no development without the problem-solving design. A powerful digital product design strategy is one of our secrets for producing a unique interface and setting up consistent user flows. We know how to create apps that leverage your business goals and match them to people’s needs.</p>
+                </div>
+            </div>
+            <div class="service">
+                <div class="service-icon"></div>
+                <div class="service-flex">
+                <h2>UI UX</h2>
+                <p>There’s no development without the problem-solving design. A powerful digital product design strategy is one of our secrets for producing a unique interface and setting up consistent user flows. We know how to create apps that leverage your business goals and match them to people’s needs.</p>
+                </div>
+            </div></div>
+        </div>
+        <div class="about-us">
+            <h1>{{about.title}}</h1>
+            <h2>{{about.tagline}}</h2>
+            <button>Learn More</button>
+        </div>
+        <div class="blog-div"></div>
+        <div class="testimonial-div"></div>
+    </section>
+</div>

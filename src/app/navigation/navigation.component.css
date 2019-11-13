@@ -1,0 +1,134 @@
+#navigation {
+    position: fixed;
+    cursor: pointer;
+    z-index: 601;
+    left: 0;
+    top: 0;
+    height: 100%;
+    background: #15151c;
+    width: 60px;
+    overflow: hidden;
+    transition: all 0.4s ease-in-out;
+}
+
+.nav-icon {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    margin: 1em;
+    width: 25px;
+  }
+  
+  .nav-icon:after, 
+  .nav-icon:before, 
+  .nav-icon div {
+    background-color: rgb(223, 223, 223);
+    border: 1px solid rgb(138, 138, 138);
+    border-radius: 2px;
+    content: '';
+    display: block;
+    height: 2px;
+    margin: 5px 0;
+    transition: all .2s ease-in-out;
+  }
+
+#navigation:hover{
+    width: 255px;
+    transition: all 0.4s ease-in-out;
+}
+
+#navigation:hover .nav-icon {
+    transition: all 0.5s ease;
+}
+
+#navigation:hover .copyright {
+    opacity: 1;
+}
+
+#navigation:hover .nav-icon:before {
+    border: none;
+    height: 3px;
+    transform: translateY(8px) translateX(180px) rotate(135deg);
+}
+
+#navigation:hover .nav-icon:after {
+    border: none;
+    height: 3px;
+    transform: translateY(-8px) translateX(180px) rotate(-135deg);
+}
+
+#navigation:hover .menu-wrapper {
+    left: 15px;
+    opacity: 1;
+}
+
+ul {
+    padding-left: 5px;
+    padding-top: 9px;
+}
+
+.brand {
+    color: white;
+}
+
+.menu-wrapper {
+    opacity: 0;
+}
+
+#navigation:hover .hamburger {
+    transform: scale(0);
+}
+
+#scroll-wrapper {
+    height: 100%;
+}
+
+.menu-wrapper {
+    position: relative;
+    left: 15px;
+    height: 100%;
+    width: 200px;
+    opacity: 0;
+}
+
+.copyright {
+    margin-top: 100%;
+    margin-left: -10px;
+    font-family: 'Montserrat';
+    font-weight: 300px;
+    font-size: 13px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: space-between;
+    color: #f1f1f1;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links {
+    list-style: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'Montserrat';
+    font-weight: 200;
+}
+
+.nav-link {
+    padding-inline: 25px;
+    padding-block: 15px;
+}
+
+.copyright {
+    opacity: 0;
+}
+
+.nav-link:hover {
+    background: #c7c7c7;
+}
+
+.nav-link:hover a {
+    color: #048a81;
+}
