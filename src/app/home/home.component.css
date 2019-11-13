@@ -61,7 +61,8 @@ a {
 .main-btn {
     position: fixed;
     top: 65%;
-    left: 30%;
+    display: inline;
+    margin-left: 160px;
 }
 
 
