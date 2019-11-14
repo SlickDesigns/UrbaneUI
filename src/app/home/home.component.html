@@ -12,7 +12,7 @@
                         <div class="title"><h3>{{slide.title}}</h3></div>
                         <div class="heading"><h3>{{slide.heading}}</h3></div>
                         <a routerLink='/projects'><button class="main-btn">{{slide.buttontext || 'Case Study'}}</button></a>
-                        <button class="main-btn">Our Services</button></div>
+                        <button class="main-btn nda">Our Services</button></div>
                     </div>
                     <div class="container" *ngIf="slide.title!=='UI/UX'">
                         <div class="img-container">
@@ -23,7 +23,7 @@
                             <div class="heading"><h3>{{slide.heading}}</h3></div>
                         
                         
-                        <button class="btn-round">{{slide.buttontext || 'View Case Study'}}</button></div>
+                        <button class="main-btn">{{slide.buttontext || 'View Case Study'}}</button></div>
                     </div>
                 </li>
             </ul>

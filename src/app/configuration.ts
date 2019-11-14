@@ -25,9 +25,10 @@ export const configuration = {
             image: 'https://vinagecko.com/images/screenshots/templates/vg_greek/screenshot-5.png',
         },
         s5: {
-            title: '',
-            heading: 'UX/UI DESIGN & DEVELOPMENT COMPANY FOR WEB/MOBILE APPS',
-            image: '',
+            type: 'Ecommerce',
+            title: 'Aston Grey Loafers',
+            heading: 'Custom Styled Shoes and Accessories',
+            image: 'https://brianwhitedesign.com/wp-content/uploads/2018_uiShoe_LeatherUI.png',
         },
         s6: {
             title: '',

@@ -47,7 +47,7 @@ a {
     color: #e0ca3c;
     z-index: 999;
     position: fixed;
-    top: 16%;
+    top: 26%;
     left: 48%;
     font-family: 'Montserrat';
     font-size: 22px;
@@ -61,8 +61,15 @@ a {
 .main-btn {
     position: fixed;
     top: 65%;
-    display: inline;
-    margin-left: 160px;
+    left: 30%;
+    align-self: center;
+    display: block;
+    color: white;
+}
+
+
+.nda {
+    left: 55%;
 }
 
 

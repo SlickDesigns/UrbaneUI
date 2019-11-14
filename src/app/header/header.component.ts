@@ -1,6 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faArrowCircleRight } from '@fortawesome/free-solid-svg-icons';
 import { ActivatedRoute, NavigationStart, Router  } from '@angular/router';
+import { Observable } from 'rxjs';
+import { map, filter } from 'rxjs/operators';
 
 @Component({
   selector: 'app-header',
@@ -10,15 +12,22 @@ import { ActivatedRoute, NavigationStart, Router  } from '@angular/router';
 export class HeaderComponent implements OnInit {
 
   mail = faEnvelope;
+  
 
-  title: any;
+  data: {};
+  title: string;
 
   constructor(private router: Router, private route: ActivatedRoute) {
     
    }
 
   ngOnInit() {
-    this.title = this.route.snapshot.paramMap.get('title');
+    this.route.queryParamMap.subscribe(params => {
+      this.data = {...params};
+      if(this.data){
+      this.title = this.data['params'].title;
+    }
+    })
   }
 
 }

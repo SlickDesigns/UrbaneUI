@@ -4,17 +4,19 @@ import { HomeComponent } from './home/home.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { ProjectsComponent } from './projects/projects.component';
+import { ServicesComponent } from './services/services.component';
 
 
 
 const routes: Routes = [
-  { path: 'home',component: HomeComponent, data : {title : 'home'} },
+  { path: 'home',component: HomeComponent,  },
   { path: '',
     redirectTo: '/home',
     pathMatch: 'full'
   },
   { path: 'privacy-policy',component: PrivacyComponent },
-  { path: 'projects',component: ProjectsComponent, data : {title : 'projects'} },
+  { path: 'projects',component: ProjectsComponent },
+  { path: 'services',component: ServicesComponent },
   { path: '**', component: PagenotfoundComponent }
 ];
 
