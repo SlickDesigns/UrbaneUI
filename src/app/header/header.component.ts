@@ -13,12 +13,12 @@ export class HeaderComponent implements OnInit {
 
   title: any;
 
-  constructor(private router: Router) {
-    console.log(this.router.getCurrentNavigation().extras.state);
+  constructor(private router: Router, private route: ActivatedRoute) {
+    
    }
 
   ngOnInit() {
-    this.title = history.state;
+    this.title = this.route.snapshot.paramMap.get('title');
   }
 
 }
