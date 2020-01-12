@@ -9,14 +9,14 @@ import { ServicesComponent } from './services/services.component';
 
 
 const routes: Routes = [
-  { path: 'home',component: HomeComponent,  },
+  { path: 'home', component: HomeComponent,  },
   { path: '',
     redirectTo: '/home',
     pathMatch: 'full'
   },
-  { path: 'privacy-policy',component: PrivacyComponent },
-  { path: 'projects',component: ProjectsComponent },
-  { path: 'services',component: ServicesComponent },
+  { path: 'privacy-policy', component: PrivacyComponent },
+  { path: 'projects', component: ProjectsComponent },
+  { path: 'services', component: ServicesComponent },
   { path: '**', component: PagenotfoundComponent }
 ];
 
