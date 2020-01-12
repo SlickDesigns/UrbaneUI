@@ -9,13 +9,6 @@ import { Router, NavigationEnd } from '@angular/router';
 export class AppComponent {
   title = 'UrbaneUI';
 
-  const left = document.getElementsByClassName('first');
-  const right = document.getElementsByClassName('second');
 
-  constructor(private router: Router) {
-    this.router.events.subscribe((ev) => {
-      if (ev instanceof NavigationEnd) { 
-        this.left.
-      }
-    });
+  constructor() {}
 }
