@@ -6,6 +6,7 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-between;
+    z-index: 999;
 }
 
 .title {
@@ -22,7 +23,7 @@
     left: 6%;
     font-family: 'Montserrat';
     font-weight: 400;
-    
+
 }
 
 .smoke{

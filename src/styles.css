@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+
+}
+
+h1,h2,h3 {
+  font-family: 'Noto Sans KR';
+  font-weight: 800;
+}
+
+p {
+  font-family: 'Muli';
+  font-weight: 500;
+}

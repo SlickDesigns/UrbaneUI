@@ -5,6 +5,8 @@ import { PrivacyComponent } from './privacy/privacy.component';
 import { PagenotfoundComponent } from './pagenotfound/pagenotfound.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { ServicesComponent } from './services/services.component';
+import { BlogComponent } from './blog/blog.component';
+import { ArticleComponent } from './article/article.component';
 
 
 
@@ -17,6 +19,8 @@ const routes: Routes = [
   { path: 'privacy-policy', component: PrivacyComponent },
   { path: 'projects', component: ProjectsComponent },
   { path: 'services', component: ServicesComponent },
+  { path: 'blog', component: BlogComponent },
+  { path: 'article:id', component: ArticleComponent },
   { path: '**', component: PagenotfoundComponent }
 ];
 

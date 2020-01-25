@@ -11,6 +11,9 @@ import { HeaderComponent } from './header/header.component';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { ProjectsComponent } from './projects/projects.component';
 import { ServicesComponent } from './services/services.component';
+import { BlogComponent } from './blog/blog.component';
+import { PostComponent } from './post/post.component';
+import { ArticleComponent } from './article/article.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +24,10 @@ import { ServicesComponent } from './services/services.component';
     PagenotfoundComponent,
     HeaderComponent,
     ProjectsComponent,
-    ServicesComponent
+    ServicesComponent,
+    BlogComponent,
+    PostComponent,
+    ArticleComponent
   ],
   imports: [
     BrowserModule,
