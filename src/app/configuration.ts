@@ -60,7 +60,14 @@ export const configuration = {
         title: 'Instagram deletes the IGTV button no one was using',
         excerpt: 'Instagram has removed that IGTV button that’s been sitting in the upper corner of the app, thankfully putting it out of its misery before it atrophies from disuse.',
         image: 'https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2018/06/IGTV-796x416.jpg',
-        color: ''
-      }
+        author: '../assets/images/roundpic.png',
+        category: 'Social Media'
+      },
+      posts: [
+        {id: 1, heading: '', post: '', image: '', color: '#8246af;'},
+        {id: 2, heading: '', post: '', image: ''},
+        {id: 3, heading: '', post: '', image: ''},
+        {id: 4, heading: '', post: '', image: ''},
+      ]
     }
 }

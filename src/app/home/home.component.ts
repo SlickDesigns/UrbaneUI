@@ -16,13 +16,13 @@ export class HomeComponent implements OnInit {
   view = 0;
 
   slide: any;
-  
+
   about: any;
 
   constructor(private config: ConfigService) { }
 
   ngOnInit() {
-    
+
     this.slide = this.getSlides(1);
     this.about = this.config.getConfig().about;
   }
@@ -32,7 +32,7 @@ export class HomeComponent implements OnInit {
   setSlides(id:number): any {
     this.slide = this.getSlides(id);
   }
-  
+
   changeView() {
     if(this.view === 0){
     this.view = 1;

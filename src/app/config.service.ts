@@ -14,6 +14,14 @@ export class ConfigService {
     return this.config;
   }
 
+  getBlogHeader() {
+    return this.config.blog.header;
+  }
+
+  getBlogPosts() {
+    return this.config.blog.posts;
+  }
+
   getArticleById(id:number){
     if(id==2){
       return this.config.projects.Conference;
@@ -43,5 +51,5 @@ export class ConfigService {
       return this.config.projects.s9;
     }
   }
-  
+
 }

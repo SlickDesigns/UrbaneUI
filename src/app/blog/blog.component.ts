@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ConfigService } from '../config.service';
 
 @Component({
   selector: 'app-blog',
@@ -7,9 +8,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BlogComponent implements OnInit {
 
-  constructor() { }
+
+  header: any;
+  posts: any;
+
+  constructor(private config: ConfigService) { }
 
   ngOnInit() {
+    this.header = this.config.getBlogHeader();
+    this.posts = this.config.getBlogPosts();
   }
 
 }

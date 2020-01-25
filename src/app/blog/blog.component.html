@@ -1,17 +1,42 @@
 <div class="blog-hero b-purple--light">
   <div class="hero-content">
-    <h2 class="post-title">Blog Post 1</h2>
+    <h2 class="post-title">{{header.title}}</h2>
     <div class="post-excerpt">
-      <p>Get a different perspective on beginnings and making plans right from the start of a new year.</p>
+      <p>{{header.excerpt}}</p>
     </div>
   </div>
   <div class="hero-banner">
-    <img src="https://cdn.pixabay.com/photo/2019/06/19/07/13/email-4284157_960_720.png" alt="banner" width="1200" height="700">
+    <img src='{{header.image}}' alt="banner" width="1200" height="700">
   </div>
   <div class="post-footer">
-    <div class="author">
-      <div class="avatar"></div>
-    </div>
     <div class="cta"><button class="btn-blog">Read More</button></div>
   </div>
+  <div class="post-details">
+    <div class="flex">
+      <div class="author"><img src="{{header.author}}" alt=""></div>
+      <div class="extra">
+        <div class="name">Elaine.D</div>
+        <div class="date">1/12/2019</div></div>
+    </div>
+    <div class="category">Social Media</div>
+  </div>
 </div>
+
+<main id="main" class="site-main">
+  <div id="posts-container" class="blog-grid">
+    <article class="blog-post" *ngFor="let post of posts">
+      <div class="card">
+        <div class="card_aside">
+          <div class="card_frame">
+            <img src="https://cdn.pixabay.com/photo/2020/01/16/17/21/pantheon-4771206_960_720.jpg" alt="" class="card_image" width="600" height="314">
+          </div>
+        </div>
+        <div class="card_content">
+          <h2 class="card_title">Could a Photographer Get on Wordpress</h2>
+          <p class="card_excerpt">Once you have clarity of what you want to accomplish, the choice of product that serves it becomes obvious</p>
+        </div>
+        <a href="" class="card_link"></a>
+      </div>
+    </article>
+  </div>
+</main>
